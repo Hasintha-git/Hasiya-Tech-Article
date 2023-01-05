@@ -6,15 +6,13 @@ import { NavbarComponent } from './template/navbar/navbar.component';
 
 const routes: Routes = [
   {
-    path: 'base',
-    children: [
-      { path: 'dashboard', component: NavbarComponent },
-      {
-        path: 'system-management',
-        loadChildren: () => import('./blog/blog.module').then(m => m.BlogModule)
-      }
-    ]
-  }
+    path: '',
+    component: DefaultComponent,
+  },
+  {
+    path: ':nav',
+    component: NavbarComponent,
+  },
 
 
 ];

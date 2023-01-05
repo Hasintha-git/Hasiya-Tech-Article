@@ -10,11 +10,11 @@ import { LandPageComponent } from './pages/default/template/land-page/land-page.
 @NgModule({
   declarations: [
     AppComponent,
-    LandPageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
 
   ],
   providers: [],

@@ -14,18 +14,22 @@ import {DialogModule} from 'primeng/dialog';
 import {AvatarModule} from 'primeng/avatar';
 import {AvatarGroupModule} from 'primeng/avatargroup';
 import {MenuModule} from 'primeng/menu';
-import { BlogModule } from './blog/blog.module';
+import {SidebarModule} from 'primeng/sidebar';
+import { BlogComponent } from './blog/blog.component';
+import {CarouselModule} from 'primeng/carousel';
+import {CardModule} from 'primeng/card';
+import {GalleriaModule} from 'primeng/galleria';
 
 @NgModule({
   declarations: [
     DefaultComponent,
     NavbarComponent,
+    BlogComponent
   ],
   imports: [
-    CommonModule,
+    // CommonModule,
     DefaultRoutingModule,
     AccordionModule,
-    BrowserAnimationsModule,
     ButtonModule,
     MenubarModule,
     ChipModule,
@@ -33,6 +37,11 @@ import { BlogModule } from './blog/blog.module';
     AvatarGroupModule,
     DialogModule,
     MenuModule,
-  ]
+    SidebarModule,
+    CarouselModule,
+    CardModule,
+    GalleriaModule
+
+  ],
 })
 export class DefaultModule { }

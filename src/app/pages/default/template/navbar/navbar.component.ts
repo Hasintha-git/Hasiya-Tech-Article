@@ -9,12 +9,14 @@ import {MegaMenuItem} from 'primeng/api';
 export class NavbarComponent implements OnInit {
   isVisible: boolean;
   profile: MenuItem[] = [];
+  visibleSidebar1:any;
 
   constructor() { 
     this.isVisible = false;
   }
 
   items: MenuItem[] = [];
+
 
   ngOnInit() {
     this.items = [
